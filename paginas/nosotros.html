@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -16,27 +14,28 @@
     <meta name="revisit-after" content="7 days" />
     <link rel="shortcut icon" type="image/x-icon" href="http://www.lomasalfombras.com/assets/imgs/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="../css/lomasalfombras.css" />
-   <style>/* Estilos para el menú de navegación */
-    #nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    
-    #nav ul li {
-        display: inline;
-        margin-right: 20px;
-    }
-    
-    #nav ul li a {
-        text-decoration: none;
-        color: #333; /* Cambia el color del texto según tus preferencias */
-        font-weight: bold;
-    }
-    
-    #nav ul li a:hover {
-        color: #f00; /* Cambia el color del texto en el hover según tus preferencias */
-    }
+    <style>
+        /* Estilos para el menú de navegación */
+        #nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        #nav ul li a {
+            text-decoration: none;
+            color: #333; /* Cambia el color del texto según tus preferencias */
+            font-weight: bold;
+        }
+
+        #nav ul li a:hover {
+            color: #f00; /* Cambia el color del texto en el hover según tus preferencias */
+        }
     </style>
 </head>
 
@@ -82,7 +81,7 @@
                 </ul>
             </div>
         </div>
-      
+
         <div id="slider" class="slider-wrapper">
             <div class="slider-carousel"> <!-- Cambié el nombre de la clase a slider-carousel -->
                 <img src="../imagenes/local_00_lomas_alfombras_II.jpg" alt="" />
@@ -91,7 +90,7 @@
             <div class="slider-arrow left" onclick="prevCarouselSlide()">&#10094;</div> <!-- Cambié la función a prevCarouselSlide() -->
             <div class="slider-arrow right" onclick="nextCarouselSlide()">&#10095;</div> <!-- Cambié la función a nextCarouselSlide() -->
         </div>
-        
+
         <div id="content" class="clearfix shadow">
             <div id="sidebar" class="right">
                 <div class="inner">
@@ -100,16 +99,20 @@
             </div>
             <div id="main" class="left">
                 <h1 class="h1_bg_gray">Lomas Alfombras II</h1>
-                <div class="comillas"><p>desde 1980, brindando atención personalizada, al servicio de los hogares y empresas. Hoy, y siguiendo la trayectoria que dejara su padre <span class="nombre_destacado">Pedro Heim</span>, Santiago sigue al frente de esta empresa familiar, ofreciendo como siempre las últimas novedades en decoración de interiores con productos de calidad reconocida.</p></div>
+                <div class="comillas">
+                    <p>desde 1980, brindando atención personalizada, al servicio de los hogares y empresas. Hoy, y
+                        siguiendo la trayectoria que dejara su padre <span class="nombre_destacado">Pedro Heim</span>,
+                        Santiago sigue al frente de esta empresa familiar, ofreciendo como siempre las últimas novedades en
+                        decoración de interiores con productos de calidad reconocida.</p>
+                </div>
                 <div class="foot_nosotros"></div>
             </div>
             <div class="marcas">
-                <img src="http://www.lomasalfombras.com/assets/imgs/todas_las_marcas.jpg" alt="Todas las marcas con las que trabajamos. Muresco, Karavell, Riel Americano, Meller,Alfombras Atlantis, Artemesi, Freire Hnos., Cerantola." />
+                <img src="http://www.lomasalfombras.com/assets/imgs/todas_las_marcas.jpg"
+                    alt="Todas las marcas con las que trabajamos. Muresco, Karavell, Riel Americano, Meller,Alfombras Atlantis, Artemesi, Freire Hnos., Cerantola." />
             </div>
         </div>
-                    
 
-       
         <div id="footer" class="shadow">
             <p>Copyright &copy; 2012-2023 <span>LOMAS ALFOMBRAS</span> | <a
                     href=".//index.html">inicio</a> | <a
@@ -120,29 +123,23 @@
             <div id="whatsapp-float"></div>
         </a>
     </div>
-</body>
-
-</html><script>
+    <script>
         let currentCarouselSlide = 0; // Cambié el nombre de la variable a currentCarouselSlide
-    const carouselSlides = document.querySelectorAll('.slider-carousel img'); // Cambié el nombre de la clase a slider-carousel
-    const totalCarouselSlides = carouselSlides.length;
+        const carouselSlides = document.querySelectorAll('.slider-carousel img'); // Cambié el nombre de la clase a slider-carousel
+        const totalCarouselSlides = carouselSlides.length;
 
-    function nextCarouselSlide() { // Cambié el nombre de la función a nextCarouselSlide
-        carouselSlides[currentCarouselSlide].style.display = 'none';
-        currentCarouselSlide = (currentCarouselSlide + 1) % totalCarouselSlides;
-        carouselSlides[currentCarouselSlide].style.display = 'block';
-    }
+        function nextCarouselSlide() { // Cambié el nombre de la función a nextCarouselSlide
+            carouselSlides[currentCarouselSlide].style.display = 'none';
+            currentCarouselSlide = (currentCarouselSlide + 1) % totalCarouselSlides;
+            carouselSlides[currentCarouselSlide].style.display = 'block';
+        }
 
-    function prevCarouselSlide() { // Cambié el nombre de la función a prevCarouselSlide
-        carouselSlides[currentCarouselSlide].style.display = 'none';
-        currentCarouselSlide = (currentCarouselSlide - 1 + totalCarouselSlides) % totalCarouselSlides;
-        carouselSlides[currentCarouselSlide].style.display = 'block';
-    }
-</script>
-
+        function prevCarouselSlide() { // Cambié el nombre de la función a prevCarouselSlide
+            carouselSlides[currentCarouselSlide].style.display = 'none';
+            currentCarouselSlide = (currentCarouselSlide - 1 + totalCarouselSlides) % totalCarouselSlides;
+            carouselSlides[currentCarouselSlide].style.display = 'block';
+        }
     </script>
 </body>
 
 </html>
-
-
