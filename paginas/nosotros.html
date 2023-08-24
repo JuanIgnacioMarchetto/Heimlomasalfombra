@@ -122,46 +122,23 @@
     </div>
 </body>
 
-</html>
-    <script>
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.slider img');
-        const totalSlides = slides.length;
-
-        function nextSlide() {
-            slides[currentSlide].style.display = 'none';
-            currentSlide = (currentSlide + 1) % totalSlides;
-            slides[currentSlide].style.display = 'block';
-        }
-
-        function prevSlide() {
-            slides[currentSlide].style.display = 'none';
-            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-            slides[currentSlide].style.display = 'block';
-        }
+</html><script>
         let currentCarouselSlide = 0; // Cambié el nombre de la variable a currentCarouselSlide
-const carouselSlides = document.querySelectorAll('.slider-carousel img'); // Cambié el nombre de la clase a slider-carousel
-const totalCarouselSlides = carouselSlides.length;
+    const carouselSlides = document.querySelectorAll('.slider-carousel img'); // Cambié el nombre de la clase a slider-carousel
+    const totalCarouselSlides = carouselSlides.length;
 
-function nextCarouselSlide() { // Cambié el nombre de la función a nextCarouselSlide
-    carouselSlides[currentCarouselSlide].style.display = 'none';
-    currentCarouselSlide = (currentCarouselSlide + 1) % totalCarouselSlides;
-    carouselSlides[currentCarouselSlide].style.display = 'block';
-}
+    function nextCarouselSlide() { // Cambié el nombre de la función a nextCarouselSlide
+        carouselSlides[currentCarouselSlide].style.display = 'none';
+        currentCarouselSlide = (currentCarouselSlide + 1) % totalCarouselSlides;
+        carouselSlides[currentCarouselSlide].style.display = 'block';
+    }
 
-function prevCarouselSlide() { // Cambié el nombre de la función a prevCarouselSlide
-    carouselSlides[currentCarouselSlide].style.display = 'none';
-    currentCarouselSlide = (currentCarouselSlide - 1 + totalCarouselSlides) % totalCarouselSlides;
-    carouselSlides[currentCarouselSlide].style.display = 'block';
-}
-Asegúrate de agregar estas funciones y nombres de clase modificados al archivo JavaScript correspondiente en tu proyecto para que el carrusel secundario funcione como deseas.
-
-
-
-
-
-
-Regenerate
+    function prevCarouselSlide() { // Cambié el nombre de la función a prevCarouselSlide
+        carouselSlides[currentCarouselSlide].style.display = 'none';
+        currentCarouselSlide = (currentCarouselSlide - 1 + totalCarouselSlides) % totalCarouselSlides;
+        carouselSlides[currentCarouselSlide].style.display = 'block';
+    }
+</script>
 
     </script>
 </body>
