@@ -1,0 +1,171 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-language" content="es" />
+    <meta name="description" content="Más de 30 años comercializando e instalando diversos productos." />
+    <meta name="keywords"
+        content="Alfombramientos, Cortinados, Revestimientos, Empapelados, Pisos Flotantes, Sillones, Petit Muebles, Placas Antihumedad" />
+    <meta name="abstract" content="Lomas Alfombras de Santiago Heim" />
+    <meta name="robots" content="all" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="revisit-after" content="7 days" />
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.lomasalfombras.com/assets/imgs/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../css/lomasalfombras.css" />
+   <style>/* Estilos para el menú de navegación */
+    #nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+    
+    #nav ul li a {
+        text-decoration: none;
+        color: #333; /* Cambia el color del texto según tus preferencias */
+        font-weight: bold;
+    }
+    
+    #nav ul li a:hover {
+        color: #f00; /* Cambia el color del texto en el hover según tus preferencias */
+    }
+    </style>
+</head>
+
+<body class="altcolors">
+    <div id="wrapper960" class="clearfix">
+        <div id="toplinks">
+            <ul class="toplinks_links">
+                <li class="top_telefono">
+                    <h3><span class="color_top">(11)</span> 4294 - 0615</h3>
+                </li>
+                <li class="top_telefono whatsapp">
+                    <h3><span class="color_top">(11)</span> 5745 - 7741</h3>
+                </li>
+                <li>
+                    <h2><span class="separador"> | </span></h2>
+                </li>
+                <li class="top_social_links">
+                    <h3>
+                        <a href="https://www.facebook.com/Lomas-Alfombras-149125038562888/" target="_blank"
+                            class="img-social-hover" style="margin-right: 10px;"><img
+                                src="http://www.lomasalfombras.com/assets/imgs/la_facebook.png"
+                                alt="Seguinos en Facebook!" width="30" height="30" /></a>
+                        <a href="https://www.instagram.com/lomasalfombras/" target="_blank" class="img-social-hover"
+                            style="margin-top: 1px;"><img
+                                src="http://www.lomasalfombras.com/assets/imgs/la_instagram.png"
+                                alt="Seguinos en Instagram!" width="30" height="30" /></a>
+                    </h3>
+                </li>
+            </ul>
+        </div>
+        <div id="header" class="clearfix shadow">
+            <div id="sitetitle" class="clearfix">
+                <div id="logo">
+                    <a href="./index.html"><img height="102px" width="390px" src="../imagenes/logo.png"
+                            alt="Lomas Alfombras" /></a>
+                </div>
+            </div>
+            <div id="nav" class="clearfix">
+                <ul>
+                    <li><a class="current" href="./index.html">Inicio</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./contacto.html">Contáctenos</a></li>
+                </ul>
+            </div>
+        </div>
+      
+        <div id="slider" class="slider-wrapper">
+            <div class="slider-carousel"> <!-- Cambié el nombre de la clase a slider-carousel -->
+                <img src="../imagenes/local_00_lomas_alfombras_II.jpg" alt="" />
+                <img src="../imagenes/local_01_lomas_alfombras_II.jpg" alt="" />
+            </div>
+            <div class="slider-arrow left" onclick="prevCarouselSlide()">&#10094;</div> <!-- Cambié la función a prevCarouselSlide() -->
+            <div class="slider-arrow right" onclick="nextCarouselSlide()">&#10095;</div> <!-- Cambié la función a nextCarouselSlide() -->
+        </div>
+        
+        <div id="content" class="clearfix shadow">
+            <div id="sidebar" class="right">
+                <div class="inner">
+                    <div class="img_fundador"><img src="" alt="../imagenes/Donheim.png"></div>
+                </div>
+            </div>
+            <div id="main" class="left">
+                <h1 class="h1_bg_gray">Lomas Alfombras II</h1>
+                <div class="comillas"><p>desde 1980, brindando atención personalizada, al servicio de los hogares y empresas. Hoy, y siguiendo la trayectoria que dejara su padre <span class="nombre_destacado">Pedro Heim</span>, Santiago sigue al frente de esta empresa familiar, ofreciendo como siempre las últimas novedades en decoración de interiores con productos de calidad reconocida.</p></div>
+                <div class="foot_nosotros"></div>
+            </div>
+            <div class="marcas">
+                <img src="http://www.lomasalfombras.com/assets/imgs/todas_las_marcas.jpg" alt="Todas las marcas con las que trabajamos. Muresco, Karavell, Riel Americano, Meller,Alfombras Atlantis, Artemesi, Freire Hnos., Cerantola." />
+            </div>
+        </div>
+                    
+
+       
+        <div id="footer" class="shadow">
+            <p>Copyright &copy; 2012-2023 <span>LOMAS ALFOMBRAS</span> | <a
+                    href=".//index.html">inicio</a> | <a
+                    href="./nosotros.html">Nosotros</a> | <a
+                    href="./contacto.html">Contáctenos</a></p>
+        </div>
+        <a href="http://bit.ly/2m3lOQ9" target="_blank">
+            <div id="whatsapp-float"></div>
+        </a>
+    </div>
+</body>
+
+</html>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slider img');
+        const totalSlides = slides.length;
+
+        function nextSlide() {
+            slides[currentSlide].style.display = 'none';
+            currentSlide = (currentSlide + 1) % totalSlides;
+            slides[currentSlide].style.display = 'block';
+        }
+
+        function prevSlide() {
+            slides[currentSlide].style.display = 'none';
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            slides[currentSlide].style.display = 'block';
+        }
+        let currentCarouselSlide = 0; // Cambié el nombre de la variable a currentCarouselSlide
+const carouselSlides = document.querySelectorAll('.slider-carousel img'); // Cambié el nombre de la clase a slider-carousel
+const totalCarouselSlides = carouselSlides.length;
+
+function nextCarouselSlide() { // Cambié el nombre de la función a nextCarouselSlide
+    carouselSlides[currentCarouselSlide].style.display = 'none';
+    currentCarouselSlide = (currentCarouselSlide + 1) % totalCarouselSlides;
+    carouselSlides[currentCarouselSlide].style.display = 'block';
+}
+
+function prevCarouselSlide() { // Cambié el nombre de la función a prevCarouselSlide
+    carouselSlides[currentCarouselSlide].style.display = 'none';
+    currentCarouselSlide = (currentCarouselSlide - 1 + totalCarouselSlides) % totalCarouselSlides;
+    carouselSlides[currentCarouselSlide].style.display = 'block';
+}
+Asegúrate de agregar estas funciones y nombres de clase modificados al archivo JavaScript correspondiente en tu proyecto para que el carrusel secundario funcione como deseas.
+
+
+
+
+
+
+Regenerate
+
+    </script>
+</body>
+
+</html>
+
+
