@@ -1,12 +1,13 @@
 *{border:0;font:inherit;font-size:100%;margin:0;padding:0;vertical-align:middle;}
-body{background-image: url(''../imagenes/3.jpg');
+body{background-image: url('../imagenes/3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #606060;
     font-family: 'Droid Sans', Verdana, Tahoma, sans-serif;
     font-size: 13px;
-    line-height: 1.6em;}
+    line-height: 1.6em;
+ ;color:#606060;font-family:'Droid Sans',Verdana,Tahoma,sans-serif;font-size:13px;line-height:1.6em;}}
 a{color:#000000;text-decoration:none;outline: 0;}
 a:hover{color:#333;text-decoration:none;}
 a img{border:none;}
