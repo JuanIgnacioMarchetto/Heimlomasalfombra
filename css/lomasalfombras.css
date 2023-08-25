@@ -83,7 +83,6 @@ img.alignleft,img.aligncenter,img.alignright{background:#fff;padding:4px;margin-
 *:first-child+html .clearfix{min-height:1%;}
 
 
-.altcolors{background-color:#e3e3d7;background-image:url('../imgs/background/3.jpg');}
 .altcolors #wrapper600, .altcolors #wrapper760, .altcolors #wrapper960, .altcolors #wrapper1240, .altcolors #wrapperfluid {box-shadow: 0px 0px 28px #888;}
 .altcolors #toplinks, .altcolors #footer{background-color:#eaecec;}
 .altcolors #content{background-color:#fcfcfc;}
